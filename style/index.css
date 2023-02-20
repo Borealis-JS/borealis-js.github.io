@@ -45,3 +45,7 @@ body {
   place-content: center;
   background-color: black;
 }
+
+html {
+  overflow: hidden;
+}
