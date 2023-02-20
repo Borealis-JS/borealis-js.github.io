@@ -11,6 +11,48 @@
 </head>
 
 <body>
+  <div id="tsparticles"></div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      background: {
+        color: "#000000"
+      },
+      particles: {
+        color: { value: "#fff" },
+        move: {
+          direction: "bottom",
+          enable: true,
+          outModes: "out",
+          speed: 2
+        },
+        number: {
+          density: {
+            enable: true,
+            area: 800
+          },
+          value: 400
+        },
+        opacity: {
+          value: 0.7
+        },
+        shape: {
+          type: "circle"
+        },
+        size: {
+          value: 10
+        },
+        wobble: {
+          enable: true,
+          distance: 10,
+          speed: 10
+        },
+        zIndex: {
+          value: { min: 0, max: 100 }
+        }
+      }
+    });
+  </script>
   <section class="hero is-fullheight is-default is-bold">
     <div class="hero-head">
       <nav class="navbar">
